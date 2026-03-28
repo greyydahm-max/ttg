@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "auto_attack",
+  "version": "3.1.0",
+  "name": "Auto Attack",
+  "description": "A mod that automatically strikes when the attack indicator is full.",
+  "authors": [
+    "John Adept"
+  ],
+  "contact": {
+    "homepage": "https://john-adept.netlify.app/mods/auto_attack.html",
+    "sources": "https://github.com/JohannesGoodbye/Auto-Attack.git",
+    "issues": "https://github.com/JohannesGoodbye/Auto-Attack/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/auto_attack/icon.png",
+  "accessWidener": "auto_attack.accesswidener",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.johnadept.fabric.AutoAttackFabricClient"
+    ],
+    "modmenu": [
+      "me.johnadept.fabric.AutoAttackModMenuFactory"
+    ]
+  },
+  "mixins": [
+    "auto_attack.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}
